@@ -31,10 +31,9 @@ var userResource = finale.resource({
 db.sequelize
   .sync({ force: true })
   .then(function() {
-    server.listen(function() {
+    server.listen(app.get('port'),function() {
       var host = server.address().address,
           port = server.address().port;
-
       console.log('listening at http://%s:%s', host, port);
     });
 });
