@@ -6,10 +6,14 @@ ASK: aprender@mauriciocap.com
 
 Crear app en heroku
 
+sigo <https://sequelize.readthedocs.io/en/1.7.0/articles/heroku/>
 ```
-heroku create
-git push heroku master
-(todo lo que hace en heroku)
+sudo snap install --classic heroku #A: si no tenia instalado heroku cli
+heroku login  #(aparece browser, login ok)
+
+cd app0-rest-api #A: tengo que estar en el dir de mi app
+heroku create #A: cree mi app
+git push heroku master #A: cree mi app (todo lo que hace en heroku)
 
 heroku addons:create heroku-postgresql:hobby-dev
 heroku config:get DATABASE_URL
