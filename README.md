@@ -31,4 +31,8 @@ Crear un usuario
 curl -d '{"username":"Ubaldo Uno", "birthday":"1991/01/01"}' -H "Content-Type: application/json" -X POST `heroku apps:info -s | grep web_url | cut -d= -f2`users
 ```
 
+Para entender el código:
+
+* https://github.com/tommybananas/finale
+* http://docs.sequelizejs.com/manual/installation/usage.html
 
